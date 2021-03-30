@@ -1,0 +1,33 @@
+---
+layout: compress
+---
+
+{% if site.maintain %}
+  <!DOCTYPE html>
+  <html lang="zh-TW">
+    <body style="margin: 40px 0;text-align: center; line-height: 1.5em">
+    網站維護中，暫停服務。若有需要請聯絡 <a href="mailto:{{ site.admin_email }}">{{ site.admin_email }}</a><br />
+    System shutdown for maintaince.<br />
+    Please contact <a href="mailto:{{ site.admin_email }}">{{ site.admin_email }}</a> if need.<br />
+    </body>
+  </html>
+{% else %}
+  <!DOCTYPE html>
+  <html lang="zh-TW">
+    <head>
+      {% include head.html %}
+      {% include og.html %}
+    </head>
+    <body>
+      {% if page.use_facebook_api %}
+        {% include facebook-api.html %}
+      {% endif %}
+      <div id="page">
+        {{ content }}
+      </div>
+
+      {% include foot.html %}
+      {% include ga.html %}
+    </body>
+  </html>
+{% endif %}
