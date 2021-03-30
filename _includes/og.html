@@ -1,0 +1,6 @@
+<meta property="og:site_name" content="{% if page.page_name %}{{ page.page_name }}{% else %}{{ site.site_name }}{% endif %}" />
+<meta property="og:title" content="{% if page.page_title %}{{ page.page_title }}{% else %}{{ site.site_title }}{% endif %}" />
+<meta property="og:description" content="{% if page.page_description %}{{ page.page_description }}{% else %}{{ site.site_description }}{% endif %}" />
+<meta property="og:url" content="{% if page.permalink %}{{ site.site_url}}{{ page.permalink }}{% else %}{{ site.site_url }}{% endif %}" />
+<meta property="og:type" content="{% if page.og_type %}{{ page.og_type }}{% else %}{{ site.og_type }}{% endif %}" />
+<meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}" />
