@@ -1,0 +1,31 @@
+{
+  "name": "gulp-coffee",
+  "description": "Compile CoffeeScript files",
+  "version": "2.3.5",
+  "homepage": "http://github.com/contra/gulp-coffee",
+  "repository": "git://github.com/contra/gulp-coffee.git",
+  "author": "Contra <yo@contra.io> (http://contra.io/)",
+  "main": "./index.js",
+  "keywords": [
+    "gulpplugin"
+  ],
+  "dependencies": {
+    "coffeescript": "^1.10.0",
+    "gulp-util": "^3.0.2",
+    "merge": "^1.2.0",
+    "through2": "^2.0.1",
+    "vinyl-sourcemaps-apply": "^0.2.1"
+  },
+  "devDependencies": {
+    "gulp-sourcemaps": "^2.2.0",
+    "mocha": "^3.0.0",
+    "should": "^11.0.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">= 0.9.0"
+  },
+  "license": "MIT"
+}
